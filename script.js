@@ -3,7 +3,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('secs');
 
-const newYear ='1 Jan 2023';
+const newYear ='1 Jan 2024';
 function countDown() {
     const newYearDate = new Date(newYear);
     const currentDate = new Date();
@@ -24,7 +24,7 @@ function countDown() {
 }
 
 function timeFormat(time) {
-    return time < 10 ? '0${time}' : time;
+    return time < 10 ? (`0${time}`) : time;
 }
 countDown();
 
